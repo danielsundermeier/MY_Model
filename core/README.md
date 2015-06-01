@@ -7,7 +7,7 @@ Codeigniter MY_Model to extend the CI_Model
 * Soft delete
 * Callbacks/Observers
 
-###Help to improve this Code and contribute!
+#####Help to improve this Code and contribute!
 
 ##Synopsis
 
@@ -20,7 +20,7 @@ Codeigniter MY_Model to extend the CI_Model
         $this->db->select('author.name, post.text, post.heading');
         $this->db->join('author', 'author.id = post.author_id');
         ...
-        return this->find();
+        return $this->find();
       }
     }
 
