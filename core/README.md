@@ -3,7 +3,7 @@ Codeigniter MY_Model to extend the CI_Model
 * CRUD Function
 * Validation
 * Form Attributes
-* Dropdown for <select>
+* Dropdown for select
 * Soft delete
 * Callbacks/Observers
 
