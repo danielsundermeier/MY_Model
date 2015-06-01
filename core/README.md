@@ -4,10 +4,10 @@ Codeigniter MY_Model to extend the CI_Model
 * Validation
 * Form Attributes
 * Dropdown for <select>
-* Soft deletelined 
+* Soft delete
 * Callbacks/Observers
 
-Help to improve this Code and contribute!
+###Help to improve this Code and contribute!
 
 ##Synopsis
 
@@ -27,10 +27,15 @@ Help to improve this Code and contribute!
     $this->load->model('Post_model', 'post');
 
 get all posts
+
     $this->post->find();
+	
 get one post: ID = 1
+
     $this->post->find(1);
+	
 get more posts: IDs = 1,2,3
+
     $this->post->find(array(1,2,3));
 
 ##Installation/Usage
@@ -38,16 +43,23 @@ Download the folder and drag it into your application folder.
 
 Extend your model classes from *MY_Model* and all the functionality will be baked in automatically.
 
-## Callbacks
-    protected $before_create = array('prep_data', 'add_author');
+##Callbacks
+    
+	protected $before_create = array('prep_data', 'add_author');
     ...
     protected function prep_data($data) {}
     protected function add_author($data) {}
 
-protected $soft_delete = TRUE;optional:    protected $soft_delete_key = 'deleted_status';
+protected $soft_delete = TRUE;
+
+optional:    
+
+    protected $soft_delete_key = 'deleted_status';
+
 ##Built-in Observers
 
 change in MY_Model.php
+
     protected $created_at_key = 'created_at';
-    protected $updated_at_key = 'updated_at';
-}
+    
+	protected $updated_at_key = 'updated_at';
