@@ -50,7 +50,9 @@ Extend your model classes from *MY_Model* and all the functionality will be bake
     protected function prep_data($data) {}
     protected function add_author($data) {}
 
-protected $soft_delete = TRUE;
+##Soft delete
+
+    protected $soft_delete = TRUE;
 
 optional:    
 
